@@ -11,7 +11,7 @@ angular.module('TIYChocolateApp', [])
 
         $scope.getSolution = function(smalls, bigs, goal) {
             console.log("About to go get me some data!");
-            $http.get("http://localhost:8080/makeChocolate.json?smalls=" + smalls + "&bigs=" + bigs + "&goal=" + goal)
+            $http.get("http://make-chocolate-tiy.herokuapp.com/makeChocolate.json?smalls=" + smalls + "&bigs=" + bigs + "&goal=" + goal)
                 .then(
                     function successCallback(response) {
                         console.log(response.data);
